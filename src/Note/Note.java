@@ -17,6 +17,10 @@ public class Note {
         this.phoneNumber = phoneNumber;
         this.gender = gender;
     }
+
+    public Note(){
+
+    }
     public String getLastName(){
         return this.lastName;
     }
@@ -25,4 +29,30 @@ public class Note {
     public String toString() {
         return lastName + " " + name + " " + patronymic + " " + birthdate + " " + phoneNumber + " " + gender + "\n";
     }
+
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+
+    public void setPatronymic(String patronymic) {
+        this.patronymic = patronymic;
+    }
+
+    public void setBirthdate(String birthdate) {
+        this.birthdate = birthdate;
+    }
+
+    public void setPhoneNumber(String phoneNumber) {
+        this.birthdate = birthdate;
+    }
+
 }

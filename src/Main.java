@@ -1,8 +1,7 @@
+import Note.Note;
 import UIConsole.UIConsole;
 
-import java.util.Calendar;
-import java.util.Date;
-import java.util.GregorianCalendar;
+import java.util.*;
 
 //Напишите приложение, которое будет запрашивать у пользователя следующие данные в произвольном порядке, разделенные пробелом:
 //        Фамилия Имя Отчество датарождения номертелефона пол
@@ -14,8 +13,18 @@ import java.util.GregorianCalendar;
 //        пол - символ латиницей f или m.
 public class Main {
     public static void main(String[] args) {
-        UIConsole uiConsole = new UIConsole();
-        uiConsole.input();
+
+                UIConsole uiConsole = new UIConsole();
+        Note note = new Note();
+        StringBuilder stringBuilder =new StringBuilder();
+        stringBuilder.append(note.getLastName());
+        stringBuilder.append("dd");
+        System.out.println(stringBuilder.toString());
+
+
+
+//                uiConsole.inputGender("dd");
+//        uiConsole.input();
 //        Calendar calendar = new GregorianCalendar(2017, 0 , 25);
 ////        Date date = calendar.getTime();
 ////        System.out.println(date);
